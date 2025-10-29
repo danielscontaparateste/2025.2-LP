@@ -13,11 +13,18 @@ int main(){
     getchar();
 
     puts("Qual o seu nome?");
-    fgets(str, TAM, stdin);
+    // fgets(str, TAM, stdin);
+    // scanf("%3[^\n]s",str); 
+    scanf("%[^\n]s",str); 
 
     // gets(str);
 
     printf("Nome= %s e idade = %d\n",str, idade);
+
+    puts("#####");
+    for (int k=0; k<TAM; k++){
+        printf("[%p] %d\n",&str[k],str[k]);
+    }
 
     return 0;
 
